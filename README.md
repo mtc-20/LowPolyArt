@@ -15,7 +15,10 @@ pip install -r requirements.txt
 ```
 Open the Jupyter notebook `final.ipynb` and run the cells till the widgets
 ## Learnings
-- I tried using Pillows inbuilt `convert` function to generate the Luma based grayscaling (`'L' mode`), and `ImageFilter` module to apply the Gaussian blur but since the results are still an image (`int` arrray), that messed up the sampling point generation. Spent way too much time trying to debug this
+- I tried using Pillow's inbuilt `convert` function to generate the Luma based grayscaling (`'L' mode`), and `ImageFilter` module to apply the Gaussian blur but since the results are still an image (`int` arrray), that messed up the sampling point generation. Spent way too much time trying to debug this
+- This approach is computationally heavy
+  - `get_colour_of_tri` takes ~6.8s
+  - :star:  updated implementation takes ~0.83s
 
 
 ## Further Ideas
@@ -29,4 +32,3 @@ Open the Jupyter notebook `final.ipynb` and run the cells till the widgets
 
 
 [1]: https://cosmiccoding.com.au/tutorials/lowpoly
-[2]:
