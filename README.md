@@ -18,7 +18,7 @@ Open the Jupyter notebook `final.ipynb` and run the cells till the widgets
 - I tried using Pillow's inbuilt `convert` function to generate the Luma based grayscaling (`'L' mode`), and `ImageFilter` module to apply the Gaussian blur but since the results are still an image (`int` arrray), that messed up the sampling point generation. Spent way too much time trying to debug this
 - This approach is computationally heavy
   - `get_colour_of_tri` takes ~6.8s
-  - :star:  updated implementation takes ~0.83s
+  - :star:  updated implementation now takes **~0.83s** (an 87% increase in speed)!
 
 
 ## Further Ideas
